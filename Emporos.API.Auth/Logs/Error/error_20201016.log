@@ -1,0 +1,217 @@
+2020-10-16T20:37:34.8124651-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-16T20:37:35.0065700-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-16T20:37:36.3387983-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-16T20:49:11.0743421-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-16T20:49:11.2264443-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-16T20:49:12.2049919-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-16T20:49:16.7930136-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2802ms
+2020-10-16T20:49:16.9161720-05:00 [ERR] (HealthChecks.UI.Core.HostedService.HealthCheckCollectorHostedService) HealthCheck collector HostedService threw an error: "Object reference not set to an instance of an object."
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HealthChecks.UI.Core.Notifications.WebHookFailureNotifier.GetFailedMessageFromContent(UIHealthReport healthReport)
+   at HealthChecks.UI.Core.Notifications.WebHookFailureNotifier.Notify(String name, UIHealthReport report, Boolean isHealthy)
+   at HealthChecks.UI.Core.Notifications.WebHookFailureNotifier.NotifyDown(String name, UIHealthReport report)
+   at HealthChecks.UI.Core.HostedService.HealthCheckReportCollector.Collect(CancellationToken cancellationToken)
+   at HealthChecks.UI.Core.HostedService.HealthCheckCollectorHostedService.Collect(CancellationToken cancellationToken)
+2020-10-16T20:49:28.9186488-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 70ms
+2020-10-16T20:49:28.9323422-05:00 [INF] (HealthChecks.UI.Core.Notifications.WebHookFailureNotifier) Notification is sent on same window time.
+2020-10-16T20:49:29.0252151-05:00 [ERR] (HealthChecks.UI.Core.HostedService.HealthCheckCollectorHostedService) HealthCheck collector HostedService threw an error: "Value cannot be null. (Parameter 'source')"
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportExtensions.ToExecutionEntries(UIHealthReport report)
+   at HealthChecks.UI.Core.HostedService.HealthCheckReportCollector.SaveExecutionHistory(HealthCheckConfiguration configuration, UIHealthReport healthReport)
+   at HealthChecks.UI.Core.HostedService.HealthCheckReportCollector.Collect(CancellationToken cancellationToken)
+   at HealthChecks.UI.Core.HostedService.HealthCheckCollectorHostedService.Collect(CancellationToken cancellationToken)
+2020-10-16T20:49:37.8037023-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: POST https localhost:5001/api/v1/Authentication/auth  {
+  "login": "EDIAZ",
+  "password": "EDIAZ"
+} Responded with [201] in 18284ms
+2020-10-16T20:49:39.0556009-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 12ms
+2020-10-16T20:49:39.0623739-05:00 [INF] (HealthChecks.UI.Core.Notifications.WebHookFailureNotifier) Notification is sent on same window time.
+2020-10-16T20:49:39.0661208-05:00 [ERR] (HealthChecks.UI.Core.HostedService.HealthCheckCollectorHostedService) HealthCheck collector HostedService threw an error: "Value cannot be null. (Parameter 'source')"
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportExtensions.ToExecutionEntries(UIHealthReport report)
+   at HealthChecks.UI.Core.HostedService.HealthCheckReportCollector.SaveExecutionHistory(HealthCheckConfiguration configuration, UIHealthReport healthReport)
+   at HealthChecks.UI.Core.HostedService.HealthCheckReportCollector.Collect(CancellationToken cancellationToken)
+   at HealthChecks.UI.Core.HostedService.HealthCheckCollectorHostedService.Collect(CancellationToken cancellationToken)
+2020-10-16T20:49:49.0920729-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 5ms
+2020-10-16T20:49:49.0947313-05:00 [INF] (HealthChecks.UI.Core.Notifications.WebHookFailureNotifier) Notification is sent on same window time.
+2020-10-16T20:49:49.0999976-05:00 [ERR] (HealthChecks.UI.Core.HostedService.HealthCheckCollectorHostedService) HealthCheck collector HostedService threw an error: "Value cannot be null. (Parameter 'source')"
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportExtensions.ToExecutionEntries(UIHealthReport report)
+   at HealthChecks.UI.Core.HostedService.HealthCheckReportCollector.SaveExecutionHistory(HealthCheckConfiguration configuration, UIHealthReport healthReport)
+   at HealthChecks.UI.Core.HostedService.HealthCheckReportCollector.Collect(CancellationToken cancellationToken)
+   at HealthChecks.UI.Core.HostedService.HealthCheckCollectorHostedService.Collect(CancellationToken cancellationToken)
+2020-10-16T20:49:59.1463808-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 6ms
+2020-10-16T20:49:59.1493658-05:00 [INF] (HealthChecks.UI.Core.Notifications.WebHookFailureNotifier) Notification is sent on same window time.
+2020-10-16T20:49:59.1587014-05:00 [ERR] (HealthChecks.UI.Core.HostedService.HealthCheckCollectorHostedService) HealthCheck collector HostedService threw an error: "Value cannot be null. (Parameter 'source')"
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportExtensions.ToExecutionEntries(UIHealthReport report)
+   at HealthChecks.UI.Core.HostedService.HealthCheckReportCollector.SaveExecutionHistory(HealthCheckConfiguration configuration, UIHealthReport healthReport)
+   at HealthChecks.UI.Core.HostedService.HealthCheckReportCollector.Collect(CancellationToken cancellationToken)
+   at HealthChecks.UI.Core.HostedService.HealthCheckCollectorHostedService.Collect(CancellationToken cancellationToken)
+2020-10-16T20:50:09.1897277-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 4ms
+2020-10-16T20:50:09.1929804-05:00 [INF] (HealthChecks.UI.Core.Notifications.WebHookFailureNotifier) Notification is sent on same window time.
+2020-10-16T20:50:09.1984646-05:00 [ERR] (HealthChecks.UI.Core.HostedService.HealthCheckCollectorHostedService) HealthCheck collector HostedService threw an error: "Value cannot be null. (Parameter 'source')"
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportExtensions.ToExecutionEntries(UIHealthReport report)
+   at HealthChecks.UI.Core.HostedService.HealthCheckReportCollector.SaveExecutionHistory(HealthCheckConfiguration configuration, UIHealthReport healthReport)
+   at HealthChecks.UI.Core.HostedService.HealthCheckReportCollector.Collect(CancellationToken cancellationToken)
+   at HealthChecks.UI.Core.HostedService.HealthCheckCollectorHostedService.Collect(CancellationToken cancellationToken)
+2020-10-16T20:50:19.2381562-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 6ms
+2020-10-16T20:50:19.2430005-05:00 [ERR] (HealthChecks.UI.Core.HostedService.HealthCheckCollectorHostedService) HealthCheck collector HostedService threw an error: "Object reference not set to an instance of an object."
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HealthChecks.UI.Core.Notifications.WebHookFailureNotifier.GetFailedMessageFromContent(UIHealthReport healthReport)
+   at HealthChecks.UI.Core.Notifications.WebHookFailureNotifier.Notify(String name, UIHealthReport report, Boolean isHealthy)
+   at HealthChecks.UI.Core.Notifications.WebHookFailureNotifier.NotifyDown(String name, UIHealthReport report)
+   at HealthChecks.UI.Core.HostedService.HealthCheckReportCollector.Collect(CancellationToken cancellationToken)
+   at HealthChecks.UI.Core.HostedService.HealthCheckCollectorHostedService.Collect(CancellationToken cancellationToken)
+2020-10-16T20:50:43.1279942-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-16T20:50:43.3148359-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-16T20:50:44.3275052-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-16T20:50:47.4631964-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 1330ms
+2020-10-16T20:50:57.9155575-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: POST https localhost:5001/api/v1/Authentication/auth  {
+  "login": "EDIAZ",
+  "password": "EDIAZ"
+} Responded with [200] in 6448ms
+2020-10-16T20:50:58.0714154-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 27ms
+2020-10-16T20:51:08.2171196-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 9ms
+2020-10-16T20:51:18.2945481-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 4ms
+2020-10-16T20:51:28.3655639-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 5ms
+2020-10-16T20:51:38.4318041-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 8ms
+2020-10-16T20:51:48.5060184-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 3ms
+2020-10-16T20:51:58.5695216-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 4ms
+2020-10-16T20:52:08.6419869-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 4ms
+2020-10-16T20:52:18.7107761-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 5ms
+2020-10-16T20:52:28.7735445-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 5ms
+2020-10-16T20:52:38.8419822-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 5ms
+2020-10-16T20:52:48.9265160-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 5ms
+2020-10-16T20:52:59.0128614-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 17ms
+2020-10-16T20:53:09.0787210-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 3ms
+2020-10-16T20:53:19.1494845-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 3ms
+2020-10-16T20:53:29.2251889-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 5ms
+2020-10-16T20:53:39.3101540-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 16ms
+2020-10-16T20:53:49.3857552-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 4ms
+2020-10-16T20:53:59.4539139-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 3ms
+2020-10-16T20:54:09.5122924-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 3ms
+2020-10-16T20:54:19.5753533-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 3ms
+2020-10-16T20:54:29.6413898-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 3ms
+2020-10-16T20:54:39.6977748-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 3ms
+2020-10-16T20:54:49.7888510-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 5ms
+2020-10-16T20:54:59.8483448-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 3ms
+2020-10-16T20:55:09.9144079-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 4ms
+2020-10-16T20:55:19.9792583-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 16ms
+2020-10-16T20:55:30.0393667-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 4ms
+2020-10-16T20:55:40.1522313-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 6ms
+2020-10-16T20:55:50.2222727-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 3ms
+2020-10-16T20:56:00.3044025-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 14ms
+2020-10-16T20:56:10.3731487-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 4ms
+2020-10-16T20:56:20.4458532-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T20:56:30.5088001-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T20:56:40.5595982-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T20:56:50.6604446-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 3ms
+2020-10-16T20:57:00.7247198-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 1ms
+2020-10-16T20:57:10.7748258-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 3ms
+2020-10-16T20:57:20.8238721-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 1ms
+2020-10-16T20:57:30.8881129-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T20:57:40.9356638-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T20:57:50.9918462-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T20:58:01.0423113-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T20:58:11.1011982-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 1ms
+2020-10-16T20:58:21.1549559-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T20:58:31.2046317-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 1ms
+2020-10-16T20:58:41.2629739-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T20:58:51.3481364-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T20:59:01.4003344-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T20:59:11.4525881-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T20:59:21.5121290-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T20:59:31.5701561-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 3ms
+2020-10-16T20:59:41.6381916-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 14ms
+2020-10-16T20:59:51.6867211-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T21:00:01.7912813-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 37ms
+2020-10-16T21:00:11.8926576-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 3ms
+2020-10-16T21:00:21.9479607-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T21:00:31.9918360-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 3ms
+2020-10-16T21:00:42.0469488-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T21:00:52.1303151-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 3ms
+2020-10-16T21:01:02.1919648-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T21:01:12.2511105-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 3ms
+2020-10-16T21:01:22.3036823-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 1ms
+2020-10-16T21:01:32.3660183-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T21:01:42.4479082-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 12ms
+2020-10-16T21:01:52.4958267-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T21:02:02.5468409-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T21:02:12.6180475-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 1ms
+2020-10-16T21:02:22.6787497-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 13ms
+2020-10-16T21:02:32.7450151-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 3ms
+2020-10-16T21:02:42.7999765-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T21:02:52.8914562-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T21:03:02.9481192-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 4ms
+2020-10-16T21:03:13.0274848-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 1ms
+2020-10-16T21:03:23.0876431-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T21:03:33.1410472-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T21:03:43.1958682-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 1ms
+2020-10-16T21:03:53.2501444-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 1ms
+2020-10-16T21:04:03.3119857-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 3ms
+2020-10-16T21:04:13.3719134-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 1ms
+2020-10-16T21:04:23.4427169-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 13ms
+2020-10-16T21:04:33.5565528-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 1ms
+2020-10-16T21:04:43.6203627-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T21:04:53.7016149-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T21:05:03.7589093-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T21:05:13.8058994-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 1ms
+2020-10-16T21:05:23.8720067-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 1ms
+2020-10-16T21:05:33.9407531-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 14ms
+2020-10-16T21:05:43.9906387-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T21:05:54.0384567-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T21:06:04.0945867-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 1ms
+2020-10-16T21:06:14.1653308-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 3ms
+2020-10-16T21:06:24.2391305-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 4ms
+2020-10-16T21:06:34.2993516-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 12ms
+2020-10-16T21:06:44.3553657-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T21:06:54.4590177-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T21:07:04.5093047-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T21:07:14.5730367-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 5ms
+2020-10-16T21:07:24.6648910-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 2ms
+2020-10-16T21:08:01.1820440-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-16T21:08:01.3216332-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-16T21:08:02.1023143-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-16T21:08:04.7498437-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 1744ms
+2020-10-16T21:08:05.1749169-05:00 [ERR] (HealthChecks.UI.Core.HostedService.HealthCheckCollectorHostedService) HealthCheck collector HostedService threw an error: "Object reference not set to an instance of an object."
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at HealthChecks.UI.Core.Notifications.WebHookFailureNotifier.GetFailedMessageFromContent(UIHealthReport healthReport)
+   at HealthChecks.UI.Core.Notifications.WebHookFailureNotifier.Notify(String name, UIHealthReport report, Boolean isHealthy)
+   at HealthChecks.UI.Core.Notifications.WebHookFailureNotifier.NotifyDown(String name, UIHealthReport report)
+   at HealthChecks.UI.Core.HostedService.HealthCheckReportCollector.Collect(CancellationToken cancellationToken)
+   at HealthChecks.UI.Core.HostedService.HealthCheckCollectorHostedService.Collect(CancellationToken cancellationToken)
+2020-10-16T21:08:15.3601701-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 15ms
+2020-10-16T21:08:15.4526586-05:00 [INF] (HealthChecks.UI.Core.Notifications.WebHookFailureNotifier) Notification is sent on same window time.
+2020-10-16T21:08:15.6043185-05:00 [ERR] (HealthChecks.UI.Core.HostedService.HealthCheckCollectorHostedService) HealthCheck collector HostedService threw an error: "Value cannot be null. (Parameter 'source')"
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportExtensions.ToExecutionEntries(UIHealthReport report)
+   at HealthChecks.UI.Core.HostedService.HealthCheckReportCollector.SaveExecutionHistory(HealthCheckConfiguration configuration, UIHealthReport healthReport)
+   at HealthChecks.UI.Core.HostedService.HealthCheckReportCollector.Collect(CancellationToken cancellationToken)
+   at HealthChecks.UI.Core.HostedService.HealthCheckCollectorHostedService.Collect(CancellationToken cancellationToken)
+2020-10-16T21:08:25.6845560-05:00 [INF] (AutoWrapper.AutoWrapperMiddleware) Source:[::1] Request: GET https localhost:5001/healthcheck   Responded with [200] in 4ms
+2020-10-16T21:08:25.7187518-05:00 [INF] (HealthChecks.UI.Core.Notifications.WebHookFailureNotifier) Notification is sent on same window time.
+2020-10-16T21:08:25.7224681-05:00 [ERR] (HealthChecks.UI.Core.HostedService.HealthCheckCollectorHostedService) HealthCheck collector HostedService threw an error: "Value cannot be null. (Parameter 'source')"
+System.ArgumentNullException: Value cannot be null. (Parameter 'source')
+   at System.Linq.ThrowHelper.ThrowArgumentNullException(ExceptionArgument argument)
+   at System.Linq.Enumerable.Select[TSource,TResult](IEnumerable`1 source, Func`2 selector)
+   at Microsoft.Extensions.Diagnostics.HealthChecks.HealthReportExtensions.ToExecutionEntries(UIHealthReport report)
+   at HealthChecks.UI.Core.HostedService.HealthCheckReportCollector.SaveExecutionHistory(HealthCheckConfiguration configuration, UIHealthReport healthReport)
+   at HealthChecks.UI.Core.HostedService.HealthCheckReportCollector.Collect(CancellationToken cancellationToken)
+   at HealthChecks.UI.Core.HostedService.HealthCheckCollectorHostedService.Collect(CancellationToken cancellationToken)
+2020-10-16T21:09:57.7432873-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-16T21:09:57.8821869-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-16T21:09:58.7841009-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database

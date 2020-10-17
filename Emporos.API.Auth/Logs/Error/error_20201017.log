@@ -1,0 +1,39 @@
+2020-10-17T05:28:49.2048607-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-17T05:28:49.3668865-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-17T05:28:51.2420052-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-17T05:43:14.1652833-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-17T05:43:14.3392865-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-17T05:43:15.3171671-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-17T05:45:04.4992027-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-17T05:45:04.6473314-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-17T05:45:05.6401720-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-17T05:49:21.4781743-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-17T05:49:21.6473363-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-17T05:49:22.7845080-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-17T05:51:52.2214675-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-17T05:51:52.3900223-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-17T05:51:53.4137966-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-17T05:54:31.2488096-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-17T05:54:31.4469585-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-17T05:54:32.4764814-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-17T05:55:18.6673124-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-17T05:55:18.8331457-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-17T05:55:20.0268918-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-17T05:56:03.8573112-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-17T05:56:04.0341910-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-17T05:56:05.5462791-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-17T06:01:54.3039888-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-17T06:01:54.4970064-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-17T06:01:55.6449495-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-17T06:06:45.5918309-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-17T06:06:45.8095076-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-17T06:06:47.0522853-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-17T06:08:08.4709729-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-17T06:08:08.6969809-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-17T06:08:09.7826602-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-17T06:14:45.9544991-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-17T06:14:46.1265411-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-17T06:14:47.1370173-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-17T06:21:16.0385032-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-17T06:21:16.3904264-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-17T06:21:17.9609112-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database

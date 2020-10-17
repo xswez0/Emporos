@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emporos.API.Auth", "Emporos.API.Auth\Emporos.API.Auth.csproj", "{A5CC49E9-A00B-4BA4-B81F-A5456DE67093}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Emporos.API.Pharmacy", "Emporos.API.Pharmacy\Emporos.API.Pharmacy.csproj", "{7F4AEF54-3D99-4462-AD57-BC8A9F405CF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emporos.API.Test", "Emporos.API.Test\Emporos.API.Test.csproj", "{AA902D8C-BC9A-4197-8E91-585E86627910}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emporos.DB.Script", "Emporos.DB.Script\Emporos.DB.Script.csproj", "{E85598D1-A3F0-44D1-9BE8-181FDFCD368D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5CC49E9-A00B-4BA4-B81F-A5456DE67093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5CC49E9-A00B-4BA4-B81F-A5456DE67093}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5CC49E9-A00B-4BA4-B81F-A5456DE67093}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5CC49E9-A00B-4BA4-B81F-A5456DE67093}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F4AEF54-3D99-4462-AD57-BC8A9F405CF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F4AEF54-3D99-4462-AD57-BC8A9F405CF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F4AEF54-3D99-4462-AD57-BC8A9F405CF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F4AEF54-3D99-4462-AD57-BC8A9F405CF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA902D8C-BC9A-4197-8E91-585E86627910}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA902D8C-BC9A-4197-8E91-585E86627910}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA902D8C-BC9A-4197-8E91-585E86627910}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA902D8C-BC9A-4197-8E91-585E86627910}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E85598D1-A3F0-44D1-9BE8-181FDFCD368D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E85598D1-A3F0-44D1-9BE8-181FDFCD368D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E85598D1-A3F0-44D1-9BE8-181FDFCD368D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E85598D1-A3F0-44D1-9BE8-181FDFCD368D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F59F604-8BA3-435E-9A4B-C74A5D26655C}
+	EndGlobalSection
+EndGlobal

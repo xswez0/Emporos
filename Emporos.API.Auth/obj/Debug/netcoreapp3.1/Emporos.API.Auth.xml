@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Emporos.API.Auth</name>
+    </assembly>
+    <members>
+        <member name="T:Emporos.API.Auth.Common.Attributtes.SwaggerDefaultValues">
+            <summary>
+            Represents the Swagger/Swashbuckle operation filter used to document the implicit API version parameter.
+            </summary>
+            <remarks>This <see cref="T:Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter"/> is only required due to bugs in the <see cref="T:Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator"/>.
+            Once they are fixed and published, this class can be removed.</remarks>
+        </member>
+        <member name="M:Emporos.API.Auth.Common.Attributtes.SwaggerDefaultValues.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <summary>
+            Applies the filter to the specified operation using the given context.
+            </summary>
+            <param name="operation">The operation to apply the filter to.</param>
+            <param name="context">The current operation filter context.</param>
+        </member>
+        <member name="M:Emporos.API.Auth.Controllers.V1.AuthenticationController.Authenticate(Emporos.API.Auth.Controllers.ModelView.AuthenticationRequest)">
+            <summary>
+            Returns a token for the user.
+            </summary>
+            <param name="request">Request with login and password of the user</param>
+            <remarks>
+            More elaborate description
+            </remarks>
+            <returns>
+            Returns a token for the user.
+            </returns>
+            <response code="201">Returns the newly created token</response>
+            <response code="204">If the response is null.</response>
+            <response code="400">If there is any rule validation</response>
+            <response code="500">If there is any exception type generated</response>
+        </member>
+    </members>
+</doc>

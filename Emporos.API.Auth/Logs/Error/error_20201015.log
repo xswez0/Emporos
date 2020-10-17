@@ -1,0 +1,271 @@
+2020-10-15T00:00:07.9624089-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T00:01:51.9962402-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T15:26:00.0741857-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T15:51:04.7161270-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T15:51:21.1063846-05:00 [ERR] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware) An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@Login".
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.MultiMapAsync[TFirst,TSecond,TThird,TFourth,TFifth,TSixth,TSeventh,TReturn](IDbConnection cnn, CommandDefinition command, Delegate map, String splitOn) in /_/Dapper/SqlMapper.Async.cs:line 945
+   at Emporos.API.Auth.Infraestructure.UserRepository.GetByLoginAsync(String Login) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Infraestructure\UserRepository.cs:line 67
+   at Emporos.API.Auth.Domain.Internal.DomainService.QueryUser(String Login) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Domain\Internal\DomainService.cs:line 63
+   at Emporos.API.Auth.Domain.Internal.DomainService.GenerateJWToken(String Login, String Password) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Domain\Internal\DomainService.cs:line 27
+   at Emporos.API.Auth.Controllers.AuthenticationController.Authenticate(AuthenticationRequest request) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Controllers\AuthenticationController.cs:line 49
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:abaedc45-b6b5-4cef-977f-b4062f7eba2b
+Error Number:137,State:2,Class:15
+2020-10-15T16:07:05.9454180-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T16:07:16.8955988-05:00 [ERR] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware) An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@pLogin".
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 419
+   at Emporos.API.Auth.Infraestructure.DbFactoryBase.DbQueryAsync[T](String sql, Object parameters) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Infraestructure\DbFactoryBase.cs:line 27
+   at Emporos.API.Auth.Infraestructure.RoleRepository.GetByLoginAsync(String Login) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Infraestructure\RoleRepository.cs:line 52
+   at Emporos.API.Auth.Domain.Internal.DomainService.QueryUser(String Login) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Domain\Internal\DomainService.cs:line 68
+   at Emporos.API.Auth.Domain.Internal.DomainService.GenerateJWToken(String Login, String Password) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Domain\Internal\DomainService.cs:line 31
+   at Emporos.API.Auth.Controllers.AuthenticationController.Authenticate(AuthenticationRequest request) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Controllers\AuthenticationController.cs:line 49
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:42c62b07-f185-44a4-8567-49d8a3e5cf52
+Error Number:137,State:2,Class:15
+2020-10-15T16:08:36.2773695-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T16:09:03.2542081-05:00 [ERR] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware) An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Error mapping types.
+
+Mapping types:
+UserTable -> UserEntity
+Emporos.API.Auth.Infraestructure.DataModel.UserTable -> Emporos.API.Auth.Domain.UserAggregate.UserEntity
+
+Type Map configuration:
+UserTable -> UserEntity
+Emporos.API.Auth.Infraestructure.DataModel.UserTable -> Emporos.API.Auth.Domain.UserAggregate.UserEntity
+
+Destination Member:
+UserRoles
+
+ ---> AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+RoleTable -> RoleEntity
+Emporos.API.Auth.Infraestructure.DataModel.RoleTable -> Emporos.API.Auth.Domain.UserAggregate.RoleEntity
+   at lambda_method(Closure , RoleTable , RoleEntity , ResolutionContext )
+   at lambda_method(Closure , Object , UserEntity , ResolutionContext )
+   --- End of inner exception stack trace ---
+   at lambda_method(Closure , Object , UserEntity , ResolutionContext )
+   at Emporos.API.Auth.Domain.Internal.DomainService.QueryUser(String Login) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Domain\Internal\DomainService.cs:line 70
+   at Emporos.API.Auth.Domain.Internal.DomainService.GenerateJWToken(String Login, String Password) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Domain\Internal\DomainService.cs:line 31
+   at Emporos.API.Auth.Controllers.AuthenticationController.Authenticate(AuthenticationRequest request) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Controllers\AuthenticationController.cs:line 49
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-10-15T16:10:00.7405927-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T16:10:27.2645284-05:00 [ERR] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware) An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: String reference not set to an instance of a String. (Parameter 's')
+   at System.Text.Encoding.GetBytes(String s)
+   at Emporos.API.Auth.Domain.Internal.JWTTokenGenerator.GenerateToken(UserEntity user, IConfiguration configuration) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Domain\Internal\JWTTokenGenerator.cs:line 16
+   at Emporos.API.Auth.Domain.Internal.DomainService.GenerateJWToken(String Login, String Password) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Domain\Internal\DomainService.cs:line 38
+   at Emporos.API.Auth.Controllers.AuthenticationController.Authenticate(AuthenticationRequest request) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Controllers\AuthenticationController.cs:line 49
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-10-15T16:10:52.7635391-05:00 [ERR] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware) An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: String reference not set to an instance of a String. (Parameter 's')
+   at System.Text.Encoding.GetBytes(String s)
+   at Emporos.API.Auth.Domain.Internal.JWTTokenGenerator.GenerateToken(UserEntity user, IConfiguration configuration) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Domain\Internal\JWTTokenGenerator.cs:line 16
+   at Emporos.API.Auth.Domain.Internal.DomainService.GenerateJWToken(String Login, String Password) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Domain\Internal\DomainService.cs:line 38
+   at Emporos.API.Auth.Controllers.AuthenticationController.Authenticate(AuthenticationRequest request) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Controllers\AuthenticationController.cs:line 49
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-10-15T16:12:23.8299719-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T18:54:08.5618754-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T18:54:54.2515618-05:00 [ERR] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware) An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Must declare the scalar variable "@Token".
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 483
+   at Emporos.API.Auth.Infraestructure.DbFactoryBase.DbQuerySingleAsync[T](String sql, Object parameters) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Infraestructure\DbFactoryBase.cs:line 32
+   at Emporos.API.Auth.Infraestructure.TokenRepository.CreateAsync(TokenTable entity) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Infraestructure\TokenRepository.cs:line 26
+   at Emporos.API.Auth.Domain.Internal.DomainService.GenerateJWToken(String Login, String Password) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Domain\Internal\DomainService.cs:line 50
+   at Emporos.API.Auth.Controllers.AuthenticationController.Authenticate(AuthenticationRequest request) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Controllers\AuthenticationController.cs:line 49
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:ad0c7d6e-8db1-4da0-b115-f72055efc646
+Error Number:137,State:2,Class:15
+2020-10-15T18:56:06.7442731-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T18:56:23.9668368-05:00 [ERR] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware) An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'TokenTable'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 483
+   at Emporos.API.Auth.Infraestructure.DbFactoryBase.DbQuerySingleAsync[T](String sql, Object parameters) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Infraestructure\DbFactoryBase.cs:line 32
+   at Emporos.API.Auth.Infraestructure.TokenRepository.CreateAsync(TokenTable entity) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Infraestructure\TokenRepository.cs:line 26
+   at Emporos.API.Auth.Domain.Internal.DomainService.GenerateJWToken(String Login, String Password) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Domain\Internal\DomainService.cs:line 50
+   at Emporos.API.Auth.Controllers.AuthenticationController.Authenticate(AuthenticationRequest request) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Controllers\AuthenticationController.cs:line 49
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:683ea7b3-7a93-4f62-ac1d-8c8cf7cd456d
+Error Number:208,State:1,Class:16
+2020-10-15T18:57:11.3189682-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T18:57:45.9477750-05:00 [ERR] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware) An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Token'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 483
+   at Emporos.API.Auth.Infraestructure.DbFactoryBase.DbQuerySingleAsync[T](String sql, Object parameters) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Infraestructure\DbFactoryBase.cs:line 32
+   at Emporos.API.Auth.Infraestructure.TokenRepository.CreateAsync(TokenTable entity) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Infraestructure\TokenRepository.cs:line 26
+   at Emporos.API.Auth.Domain.Internal.DomainService.GenerateJWToken(String Login, String Password) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Domain\Internal\DomainService.cs:line 50
+   at Emporos.API.Auth.Controllers.AuthenticationController.Authenticate(AuthenticationRequest request) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Controllers\AuthenticationController.cs:line 49
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:d3ca2522-2a6f-4506-bd90-8786b9dbdb68
+Error Number:207,State:1,Class:16
+2020-10-15T19:00:38.7777541-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T19:00:52.6866941-05:00 [ERR] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware) An unhandled exception has occurred while executing the request.
+System.Data.SqlClient.SqlException (0x80131904): Invalid column name 'Token'.
+   at System.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__126_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 483
+   at Emporos.API.Auth.Infraestructure.DbFactoryBase.DbQuerySingleAsync[T](String sql, Object parameters) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Infraestructure\DbFactoryBase.cs:line 32
+   at Emporos.API.Auth.Infraestructure.TokenRepository.CreateAsync(TokenTable entity) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Infraestructure\TokenRepository.cs:line 26
+   at Emporos.API.Auth.Domain.Internal.DomainService.GenerateJWToken(String Login, String Password) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Domain\Internal\DomainService.cs:line 50
+   at Emporos.API.Auth.Controllers.AuthenticationController.Authenticate(AuthenticationRequest request) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Auth\Controllers\AuthenticationController.cs:line 49
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:32edd9a2-fdce-4d2f-b141-b2d891044dd4
+Error Number:207,State:1,Class:16
+2020-10-15T19:04:17.5361013-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T19:05:47.8863826-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T19:11:33.9486611-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T19:12:17.8498706-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T19:14:38.4587827-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T19:23:35.2576741-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T19:28:23.7364972-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T19:46:59.9468702-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T19:47:00.1674168-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-15T19:48:53.6220785-05:00 [INF] (Emporos.API.Auth.Program) Starting web host
+2020-10-15T19:48:53.8362663-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-15T19:48:54.9491344-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database

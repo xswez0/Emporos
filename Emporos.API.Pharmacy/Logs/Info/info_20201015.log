@@ -1,0 +1,149 @@
+2020-10-15T20:15:40.5493386-05:00 [INF] (Emporos.API.Pharmacy.Program) Starting web host
+2020-10-15T20:15:40.7431603-05:00 [FTL] (Microsoft.AspNetCore.Hosting.Diagnostics) Application startup exception
+System.Exception: Could not resolve a service of type 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider' for the parameter 'provider' of method 'Configure' on type 'Emporos.API.Pharmacy.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2020-10-15T20:16:44.6397819-05:00 [INF] (Emporos.API.Pharmacy.Program) Starting web host
+2020-10-15T20:16:44.9266581-05:00 [FTL] (Microsoft.AspNetCore.Hosting.Diagnostics) Application startup exception
+System.Exception: Could not resolve a service of type 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider' for the parameter 'provider' of method 'Configure' on type 'Emporos.API.Pharmacy.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2020-10-15T20:17:44.2733923-05:00 [INF] (Emporos.API.Pharmacy.Program) Starting web host
+2020-10-15T20:17:44.4153127-05:00 [FTL] (Microsoft.AspNetCore.Hosting.Diagnostics) Application startup exception
+System.Exception: Could not resolve a service of type 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider' for the parameter 'provider' of method 'Configure' on type 'Emporos.API.Pharmacy.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2020-10-15T20:19:12.7105310-05:00 [INF] (Emporos.API.Pharmacy.Program) Starting web host
+2020-10-15T20:19:12.9389202-05:00 [FTL] (Microsoft.AspNetCore.Hosting.Diagnostics) Application startup exception
+System.Exception: Could not resolve a service of type 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider' for the parameter 'provider' of method 'Configure' on type 'Emporos.API.Pharmacy.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2020-10-15T20:20:11.9866881-05:00 [INF] (Emporos.API.Pharmacy.Program) Starting web host
+2020-10-15T20:20:12.1680677-05:00 [FTL] (Microsoft.AspNetCore.Hosting.Diagnostics) Application startup exception
+System.Exception: Could not resolve a service of type 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider' for the parameter 'provider' of method 'Configure' on type 'Emporos.API.Pharmacy.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2020-10-15T20:33:46.2610345-05:00 [INF] (Emporos.API.Pharmacy.Program) Starting web host
+2020-10-15T20:33:46.8858534-05:00 [FTL] (Microsoft.AspNetCore.Hosting.Diagnostics) Application startup exception
+System.Exception: Could not resolve a service of type 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider' for the parameter 'provider' of method 'Configure' on type 'Emporos.API.Pharmacy.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2020-10-15T20:34:00.9330091-05:00 [INF] (Emporos.API.Pharmacy.Program) Starting web host
+2020-10-15T20:34:01.3097896-05:00 [FTL] (Microsoft.AspNetCore.Hosting.Diagnostics) Application startup exception
+System.Exception: Could not resolve a service of type 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider' for the parameter 'provider' of method 'Configure' on type 'Emporos.API.Pharmacy.Startup'.
+ ---> System.InvalidOperationException: No service for type 'Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider' has been registered.
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__2(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+2020-10-15T20:36:51.7518158-05:00 [INF] (Emporos.API.Pharmacy.Program) Starting web host
+2020-10-15T20:36:51.9102254-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-15T20:36:52.9390252-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-15T20:37:38.2445479-05:00 [INF] (Emporos.API.Pharmacy.Program) Starting web host
+2020-10-15T20:37:38.3986483-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-15T20:37:39.4958664-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-15T22:41:49.6811154-05:00 [INF] (Emporos.API.Pharmacy.Program) Starting web host
+2020-10-15T22:41:49.8113258-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-15T22:41:51.1312710-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-15T22:42:49.9499477-05:00 [INF] (Emporos.API.Pharmacy.Program) Starting web host
+2020-10-15T22:42:50.0845069-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-15T22:42:50.8834418-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-15T23:02:14.0369655-05:00 [INF] (Emporos.API.Pharmacy.Program) Starting web host
+2020-10-15T23:02:14.1838960-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-15T23:02:15.0858247-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-15T23:44:56.4838110-05:00 [INF] (Emporos.API.Pharmacy.Program) Starting web host
+2020-10-15T23:44:56.6308647-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-15T23:44:57.8774134-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-15T23:51:38.8370366-05:00 [INF] (Emporos.API.Pharmacy.Program) Starting web host
+2020-10-15T23:51:39.0125450-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-15T23:51:39.8389316-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-15T23:53:15.6284400-05:00 [ERR] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware) An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Emporos.API.Pharmacy.Domain.Internal.DomainService.CreateItem(CreateItemRequest createItemRequest) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Pharmacy\Domain\Internal\DomainService.cs:line 33
+   at Emporos.API.Pharmacy.Controllers.V1.PharmacyController.Create(CreateItemRequest request) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Pharmacy\Controllers\V1\PharmacyController.cs:line 49
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-10-15T23:54:43.7269122-05:00 [ERR] (Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware) An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Emporos.API.Pharmacy.Domain.Internal.DomainService.CreateItem(CreateItemRequest createItemRequest) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Pharmacy\Domain\Internal\DomainService.cs:line 33
+   at Emporos.API.Pharmacy.Controllers.V1.PharmacyController.Create(CreateItemRequest request) in C:\Users\EDIAZR\source\repos\EmporosCodeTest\Emporos.API.Pharmacy\Controllers\V1\PharmacyController.cs:line 49
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-10-15T23:55:41.0050439-05:00 [INF] (Emporos.API.Pharmacy.Program) Starting web host
+2020-10-15T23:55:41.1654796-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-15T23:55:42.2394222-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database
+2020-10-15T23:59:23.4994643-05:00 [INF] (Emporos.API.Pharmacy.Program) Starting web host
+2020-10-15T23:59:23.6555225-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Initializing UI Database
+2020-10-15T23:59:24.7336920-05:00 [INF] (HealthChecks.UI.Core.HostedService.UIInitializationHostedService) Saving healthchecks configuration to database

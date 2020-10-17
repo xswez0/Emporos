@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Emporos.API.Pharmacy</name>
+    </assembly>
+    <members>
+        <member name="T:Emporos.API.Pharmacy.Common.Attributtes.SwaggerDefaultValues">
+            <summary>
+            Represents the Swagger/Swashbuckle operation filter used to document the implicit API version parameter.
+            </summary>
+            <remarks>This <see cref="T:Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter"/> is only required due to bugs in the <see cref="T:Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator"/>.
+            Once they are fixed and published, this class can be removed.</remarks>
+        </member>
+        <member name="M:Emporos.API.Pharmacy.Common.Attributtes.SwaggerDefaultValues.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <summary>
+            Applies the filter to the specified operation using the given context.
+            </summary>
+            <param name="operation">The operation to apply the filter to.</param>
+            <param name="context">The current operation filter context.</param>
+        </member>
+        <member name="M:Emporos.API.Pharmacy.Controllers.V1.ItemController.Post(Emporos.API.Pharmacy.Controllers.ModelView.CreateItemRequest)">
+            <summary>
+            Creates a item of given vendor.
+            </summary>
+            <param name="request">Information to create item</param>
+            <remarks>
+            More elaborate description
+            </remarks>
+            <returns>
+            Returns status request 201 created.
+            </returns>
+            <response code="201">Returns the status created</response>
+            <response code="204">If the response is null.</response>
+            <response code="400">If there is any rule validation</response>
+            <response code="500">If there is any exception type generated</response>
+        </member>
+        <member name="M:Emporos.API.Pharmacy.Controllers.V1.ItemController.Put(Emporos.API.Pharmacy.Controllers.ModelView.UpdateItemRequest,System.Int64)">
+            <summary>
+            Updates a item of given vendor.
+            </summary>
+            <param name="request">Information to update item</param>
+            <param name="id">Id from the item</param>
+            <remarks>
+            More elaborate description
+            </remarks>
+            <returns>
+            Returns status request 200 ok.
+            </returns>
+            <response code="200">Returns the status updated ok</response>
+            <response code="400">If there is any rule validation</response>
+            <response code="404">If the item id is not found</response>
+            <response code="500">If there is any exception type generated</response>
+        </member>
+        <member name="M:Emporos.API.Pharmacy.Controllers.V1.PharmacyInventoryController.Post(Emporos.API.Pharmacy.Controllers.ModelView.CreatePharmacyInventoryRequest)">
+            <summary>
+            Creates a pharmacy inventory.
+            </summary>
+            <param name="request">Information to create pharmacy inventory</param>
+            <remarks>
+            More elaborate description
+            </remarks>
+            <returns>
+            Returns status request 201 created.
+            </returns>
+            <response code="201">Returns the status created</response>
+            <response code="204">If the response is null.</response>
+            <response code="400">If there is any rule validation</response>
+            <response code="500">If there is any exception type generated</response>
+        </member>
+        <member name="M:Emporos.API.Pharmacy.Controllers.V1.PharmacyInventoryController.Put(Emporos.API.Pharmacy.Controllers.ModelView.UpdatePharmacyInventoryRequest,System.Int64)">
+            <summary>
+            Updates pharmacy inventory.
+            </summary>
+            <param name="request">Information to update pharmacy inventory</param>
+            <param name="id">Id from the pharmacy inventory</param>
+            <remarks>
+            More elaborate description
+            </remarks>
+            <returns>
+            Returns status request 200 ok.
+            </returns>
+            <response code="200">Returns the status updated ok</response>
+            <response code="400">If there is any rule validation</response>
+            <response code="404">If the item id is not found</response>
+            <response code="500">If there is any exception type generated</response>
+        </member>
+        <member name="M:Emporos.API.Pharmacy.Controllers.V1.PharmacyInventoryController.Delete(System.Int64)">
+            <summary>
+            Deletes pharmacy inventory.
+            </summary>
+            <param name="id">Id from the pharmacy inventory</param>
+            <remarks>
+            More elaborate description
+            </remarks>
+            <returns>
+            Returns status request 200 ok.
+            </returns>
+            <response code="200">Returns the status updated ok</response>
+            <response code="400">If there is any rule validation</response>
+            <response code="404">If the item id is not found</response>
+            <response code="500">If there is any exception type generated</response>
+        </member>
+    </members>
+</doc>
